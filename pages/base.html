@@ -30,6 +30,12 @@
         </div>
     </section>
     
+    <script>
+        const collapseElementList = document.querySelectorAll('.collapse')
+        const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+    </script>
+    
+    
     <section class="add">
         <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -63,6 +69,12 @@
             -->
         
     </section>
+    
+    <script>
+        const bsCollapse = new bootstrap.Collapse('#myCollapse', {
+          toggle: false
+        })
+    </script>    
     
     <section class="list">
         
