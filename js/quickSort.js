@@ -1,5 +1,5 @@
 
-exemplo de QuickSort 
+//exemplo de QuickSort 
 var items = [5,3,7,6,2,9];
 function swap(items, leftIndex, rightIndex){
     var temp = items[leftIndex];

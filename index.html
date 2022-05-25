@@ -15,9 +15,11 @@
 
 <body>
 	<header class="d-flex justify-content-center py-3">
+		<h3>Maneuvers Mananger</h3>
+
 		<ul class="nav nav-pills">
 			<li class="nav-item"><a href="http://127.0.0.1:5500/index.html#" class="nav-link" aria-current="page">Home</a></li>
-			<li class="nav-item"><a href="pages/base.html#" class="nav-link">Base</a></li>
+			<li class="nav-item"><a href="pages/base.html#" class="nav-link ">Base</a></li>
 			<li class="nav-item"><a href="pages/fakie.html#" class="nav-link">Fakie</a></li>
 			<li class="nav-item"><a href="pages/switch.html#" class="nav-link">Switch</a></li>
 			<li class="nav-item"><a href="pages/nollie.html#" class="nav-link">Nollie</a></li>
@@ -29,11 +31,37 @@
 		<div class="collum-my-tricks">
 			<div class="tricks">
 				<div class="card">
-					<h5 class="card-header">Featured</h5>
+					<h5 class="card-header">My Maneuvers</h5>
 					<div class="card-body">
-						<h5 class="card-title">Special title treatment</h5>
+						<h5 class="card-title">See your list of maneuvers</h5>
 						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
+						
+						<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+							Launch static backdrop modal
+						</button>
+			  
+						<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<div class="card">
+											<div class="card-body">
+											  This is some text within a card body.
+											</div>
+										</div>										
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary">Understood</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -41,12 +69,69 @@
 
 		<div class="collum-new-tricks">
 			<div class="tricks">
-				<div class="card">
-					<h5 class="card-header">Featured</h5>
+				<div class="card mx-4">
+					<h5 class="card-header">New Maneuvers</h5>
 					<div class="card-body">
-						<h5 class="card-title">Special title treatment</h5>
+						<h5 class="card-title">See your list of maneuvers</h5>
 						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
+
+						<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+							Launch static backdrop modal
+						</button>
+			  
+						<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										...
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary">Understood</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="collum-Favorite-tricks">
+			<div class="tricks">
+				<div class="card ">
+					<h5 class="card-header">Favorite Maneuvers</h5>
+					<div class="card-body">
+						<h5 class="card-title">See your list of maneuvers</h5>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						
+						<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+							Launch static backdrop modal
+						</button>
+			  
+						<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										...
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary">Understood</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -54,7 +139,7 @@
 	</section>
 
 	<section class="container-pages">
-		<div class="row row-cols-1 row-cols-md-2 g-4">
+		<div class="row row-cols row-cols-2 my-4 g-4">
 			<div class="col">
 				<div class="card">
 					<div class="card-body">
@@ -90,13 +175,12 @@
 		</div>
 	</section>
 
-
 	<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
 		<div class="col-md-4 d-flex align-items-center">
 			<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
 			<svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
 			</a>
-			<span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+			<span class="mb-3 mb-md-0 text-muted">© 2022 BY Deniel, ITU | 2022</span>
 		</div>
 
 		<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">

@@ -1,6 +1,19 @@
+@use '../modules/variables'
+
 .container-cards
     justify-content: space-between
+    
+    .card
+        max-width: 470px
+
 
 .container-pages    
+
     .card
+        max-width: 700px
          
+        &:hover
+            border-color: variables.$gray
+
+            h5
+                color: variables.$black
